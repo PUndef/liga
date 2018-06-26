@@ -52,6 +52,9 @@
                 cursor: default;
             }
         }
+        &[data-events='true'] {
+            border: 1px solid #fff;
+        }
     }
 }
 
