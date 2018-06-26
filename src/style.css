@@ -1,0 +1,48 @@
+/* CALENDAR STYLES START */
+.cal-slider__item-title {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+.cal-slider__item:focus {
+    outline: none;
+}
+.cal-slider__item table {
+    margin: 0 auto;
+    min-width: 600px;
+}
+.cal-slider__item table tr  {
+    text-align: center;
+}
+.cal__container-head,.cal__container-body {
+    font-size: 0;
+}
+.cal__container-body {
+    background-color: rgba(16,24,62,1);
+}
+
+.cal__container-body .cal__item {
+    cursor: pointer;
+    min-height: 130px;
+    background-color: rgb(16,24,62);
+    color: #fff;
+    transition: background-color 0.3s;
+}
+.cal__container-body .cal__item:hover {
+    background: #4c75b9;
+}
+.cal__container-body .cal__item.inactive:hover {
+    background-color: rgb(16,24,62);
+    cursor: default;
+}
+.cal__item {
+    display: inline-block;
+    width: 14.285714285714286%;
+    font-size: 24px;
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/* CALENDAR STYLES END */
+

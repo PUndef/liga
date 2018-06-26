@@ -1,0 +1,79 @@
+.social {
+    position: fixed;
+    left: 20px;
+    top: 20%;
+    z-index: 10;
+    a {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 60px;
+        height: 60px;
+        display: block;
+        transform: scale(1);
+        transition: transform 0.5s;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    .vk {
+        background-image: url('image/icons/social/vk.png');
+    }
+    .tw {
+        background-image: url('image/icons/social/twitch.png');
+    }
+    .in {
+        background-image: url('image/icons/social/instagram.png');
+    }
+    .yt {
+        background-image: url('image/icons/social/youtube.png');
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .social {
+        left: 20px;
+        top: 20px;
+        &::before {
+            content: '';
+            cursor: pointer;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 50px;
+            background-image: url(image/icons/social/social.png);
+            background-color: rgba(16,24,62,0.8);
+            width: 56px;
+            height: 56px;
+            display: block;
+            border: 2px solid #000;
+            border-radius: 8px;
+            transform: scale(1);
+            transition: transform 0.5s;
+        }
+        &:hover {
+            &::before {
+                transform: scale(1.2);
+            }
+        }
+        &.open {
+            a {
+                height: 60px;
+            }
+            &::before {
+                margin-bottom: 20px;
+            }
+        }
+        a {
+            height: 0;
+            transition: height 0.5s;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .social {
+        left: 20px;
+        bottom: 20px;
+        top: auto;
+    }
+}

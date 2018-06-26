@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Расписание мероприятий Лиги Сибири</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neucha&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="theme-summer">
+    <header>
+        <div class="container">
+            <div class="center">
+                <h1>Расписание мероприятий Лиги Сибири</h1>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="cal-slider"></div>
+    </div>
+    <div class="social">
+        <a class="vk" target="_blank" href="https://vk.com/league_of_siberia"></a>
+        <a class="yt" target="_blank" href="https://www.youtube.com/channel/UC5B7aQONoii4V3Hc60Aqf2w"></a>
+        <a class="in" target="_blank" href="https://www.instagram.com/league_of_siberia24/"></a>
+        <!-- <a class="tw" href="http://"></a> -->
+    </div>
+    <template id="cal-slider__item" style="display:none;">
+        <div class="cal-slider__item">
+            <div class="cal-slider__item-title">месяц</div>
+            <div class="cal__container">
+                <div class="cal__container-head">
+                    <div class="cal__item">пн</div>
+                    <div class="cal__item">вт</div>
+                    <div class="cal__item">ср</div>
+                    <div class="cal__item">чт</div>
+                    <div class="cal__item">пт</div>
+                    <div class="cal__item">сб</div>
+                    <div class="cal__item">вс</div>
+                </div>
+                <div class="cal__container-body">
+
+                </div>
+            </div>
+        </div>
+    </template>
+    <div class="modal" id="modalEventInfo">
+        <div class="modal-body"></div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="events.json"></script>
+    <script type="text/javascript" src="script.min.js"></script>
+</body>
+
+</html>

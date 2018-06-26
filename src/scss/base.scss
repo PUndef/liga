@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-image: url(./image/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    &.theme-summer {
+        background-image: url(./image/background_2.jpg);
+        color: #fff;
+    }
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+header {
+    h1 {
+        font-family: 'Neucha', cursive;
+        text-transform: uppercase;
+        font-size: 48px;
+    }
+    &::after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        h1 {
+            font-size: 30px;
+        }
+    }
+}

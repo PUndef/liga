@@ -1,0 +1,36 @@
+.modal {
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 22px;
+    max-width: 50%;
+    img {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .modal {
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .modal {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .modal {
+        max-width: 95%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modal {
+        font-size: 18px;
+        padding: 15px;
+        max-width: 99%;
+    }
+}

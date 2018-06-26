@@ -1,0 +1,84 @@
+.cal__item {
+    display: inline-block;
+    width: 14.285714285714286%;
+    font-size: 24px;
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.cal-slider__item {
+    &-title {
+        text-align: center;
+        font-size: 26px;
+        text-transform: uppercase;
+    }
+    table {
+        margin: 0 auto;
+        min-width: 600px;
+        tr {
+            text-align: center;
+        }
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.cal__container-head,
+.cal__container-body {
+    font-size: 0;
+}
+
+.cal__container-body {
+    // background-color: rgba(16,24,62,1);
+    background-color: rgba(16, 24, 62, 0.8);
+    padding: 15px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0);
+    .cal__item {
+        cursor: pointer;
+        min-height: 135px; // background-color: rgba(16,24,62, 0.8);
+        color: #fff;
+        transition: box-shadow 0.5s, background-color 0.5s;
+        &:hover {
+            background-color: rgb(16, 24, 62);
+            box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.8);
+        }
+        &.inactive {
+            &:hover {
+                background-color: rgba(16, 24, 62, 0);
+                box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0);
+                cursor: default;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cal__item {
+        padding: 15px 10px 10px 7px;
+    }
+    .cal__container-body {
+        margin-bottom: 80px;
+        .cal__item {
+            min-height: 55px;
+            &[data-events='true'] {
+                position: relative;
+                &:before {
+                    content: '';
+                    background-color: #fff;
+                    position: absolute;
+                    right: 5px;
+                    top: 5px;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                }
+            }
+            &-text {
+                font-size: 0;
+            }
+        }
+    }
+}
