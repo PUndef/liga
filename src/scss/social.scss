@@ -7,8 +7,9 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        width: 60px;
-        height: 60px;
+        width: 54px;
+        height: 54px;
+        margin-bottom: 10px;
         display: block;
         transform: scale(1);
         transition: transform 0.5s;
@@ -41,7 +42,7 @@
             background-position: center;
             background-size: 50px;
             background-image: url(image/icons/social/social.png);
-            background-color: rgba(16,24,62,0.8);
+            background-color: rgba(16, 24, 62, 0.8);
             width: 56px;
             height: 56px;
             display: block;

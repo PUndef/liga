@@ -4,13 +4,14 @@
 
 body {
     font-family: 'Amatic SC', cursive;
+    font-weight: 400;
     background-image: url(./image/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     min-height: 100vh;
     &.theme-summer {
-        background-image: url(./image/background_2.jpg);
+        background-image: url(./image/background_2.png);
         color: #fff;
     }
 }

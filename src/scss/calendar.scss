@@ -10,8 +10,9 @@
 
 .cal-slider__item {
     &-title {
+        font-weight: 700;
         text-align: center;
-        font-size: 26px;
+        font-size: 30px;
         text-transform: uppercase;
     }
     table {
@@ -23,6 +24,13 @@
     }
     &:focus {
         outline: none;
+    }
+}
+
+.cal__container-head {
+    font-weight: 700;
+    .cal__item {
+        font-size: 28px;
     }
 }
 
