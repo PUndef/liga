@@ -27,7 +27,7 @@
         height: 4px;
         background: white;
 
-        transition: background 0s 0.3s;
+        transition: background 0s 0.3s 0.3s;
         &::before,
         &::after {
             position: absolute;
@@ -38,18 +38,18 @@
             background-color: #fff;
             content: "";
 
-            transition-duration: 0.3s, 0.3s;
-            transition-delay: 0.3s, 0s;
+            transition-duration: 0.3s, 0.3s, 0.3s;
+            transition-delay: 0.3s, 0s, 0s;
         }
         &::before {
             top: -20px;
 
-            transition-property: top, transform;
+            transition-property: top, transform, -webkit-transform;
         }
         &::after {
             bottom: -20px;
 
-            transition-property: bottom, transform;
+            transition-property: bottom, transform, -webkit-transform;
         }
     }
 }
@@ -69,7 +69,7 @@
                 }
                 &::before,
                 &::after {
-                    transition-delay: 0s, 0.3s;
+                    transition-delay: 0s, 0.3s, 0.3s;
                 }
             }
         }
