@@ -7,8 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Расписание мероприятий Лиги Сибири</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
@@ -23,6 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link href="style.css" rel="stylesheet" />
 </head>
+
 <body class="theme-summer">
     <header>
         <div class="container">
@@ -35,6 +34,9 @@
         <div id="cal-slider"></div>
     </div>
     <div class="social">
+        <button class="toggler">
+            <span>toggle menu</span>
+        </button>
         <a class="vk" target="_blank" href="https://vk.com/league_of_siberia"></a>
         <a class="yt" target="_blank" href="https://www.youtube.com/channel/UC5B7aQONoii4V3Hc60Aqf2w"></a>
         <a class="in" target="_blank" href="https://www.instagram.com/league_of_siberia24/"></a>
@@ -62,6 +64,7 @@
     <div class="modal" id="modalEventInfo">
         <div class="modal-body"></div>
     </div>
+    <div class="overlay"></div>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="events.json"></script>
     <script type="text/javascript" src="script.min.js"></script>

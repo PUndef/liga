@@ -10,9 +10,11 @@ body {
     background-position: center;
     background-size: cover;
     min-height: 100vh;
+    background-color: rgb(0, 0, 0);
     &.theme-summer {
         background-image: url(./image/background_2.png);
         color: #fff;
+        background-color: rgb(12, 55, 71);
     }
 }
 
@@ -43,6 +45,7 @@ header {
     header {
         h1 {
             font-size: 30px;
+            margin-top: 70px;
         }
     }
 }
