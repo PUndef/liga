@@ -14,7 +14,7 @@
         text-align: center;
         font-size: 30px;
         text-transform: uppercase;
-        color: rgba(16,24,62,0.8);
+        color: rgba(16, 24, 62, 0.8);
         font-family: 'Old Standard TT', serif;
     }
     table {
@@ -33,7 +33,7 @@
     font-weight: 700;
     .cal__item {
         font-size: 28px;
-        color: rgba(16,24,62,0.8);
+        color: rgba(16, 24, 62, 0.8);
         font-family: 'Old Standard TT', serif;
     }
 }
@@ -70,8 +70,18 @@
 }
 
 @media screen and (max-width: 768px) {
+    .cal-slider__item {
+        &-title {
+            color: #fff;
+        }
+    }
     .cal__item {
         padding: 15px 10px 10px 7px;
+    }
+    .cal__container-head {
+        .cal__item {
+            color: #fff;
+        }
     }
     .cal__container-body {
         margin-bottom: 80px;
