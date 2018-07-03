@@ -6,6 +6,10 @@
     vertical-align: top;
     padding: 10px;
     box-sizing: border-box;
+    &.disabled {
+        pointer-events: none;
+        opacity: 0.4;
+    }
 }
 
 .cal-slider__item {
